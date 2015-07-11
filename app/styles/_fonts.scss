@@ -55,10 +55,47 @@ ul.menu-sex {
 
     &:hover {
       background-color: #EFEFEF;
+      cursor: pointer;
     }
   }
 
   li:last-child {
     border-bottom: solid 1px;
+  }
+}
+
+ul.menu-size {
+  list-style-type: none;
+
+  font-size: 0px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+
+  @media #{$large-up} {
+    margin-top: 40px;    
+  }
+
+  li {
+    @extend .font-menu-item;
+    display: inline;
+    font-size: 28px !important;
+    border-left: solid 1px;
+    border-right: solid 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin: 0px !important;
+
+    &:hover {
+      background-color: #EFEFEF;
+      cursor: pointer;
+    }
+  }
+
+  li:last-child {
+    border-right: solid 1px;
   }
 }
