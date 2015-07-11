@@ -1,26 +1,45 @@
 @import url(http://fonts.googleapis.com/css?family=Adamina);
 @import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,300light|Monsterrat:400|Oswald:300,400|Bree+Serif|Merriweather|Vollkorn');
+@import url(http://fonts.googleapis.com/css?family=Vollkorn);
 @import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
 
 
 $font-logo: 'Adamina', serif;
 $font-sublogo: 'Lato', sans-serif;
-$color-topaz: #336655;
+$font-menu-item: 'Vollkorn', serif;
 
-.logo {
+$color-topaz: #66CCAA;
+$color-topaz-gold: #CC7A00;
+
+.font-logo {
   font-family: $font-logo !important;
   font-size: 64px !important;
   letter-spacing: 7px;
   //font-style: italic;
-  text-shadow: 1px 1px 0px $color-topaz; 
+  text-shadow: 1px 1px 0px $color-topaz-gold; 
   font-weight: 300;
   text-transform: uppercase;
 }
 
-.sub-logo {
-  @extend .logo;
+.font-logo-sub {
+  @extend .font-logo;
   font-family: $font-sublogo !important;
   font-size: 24px !important;
   letter-spacing: 3px;
   text-shadow: 0px 0px 0px $color-topaz;
+}
+
+.font-menu-item {
+  font-family: $font-menu-item;
+  font-size: 24px !important;
+}
+
+ul.menu-sex {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style-type: none;
+  li {
+    @extend .font-menu-item;
+    display: block;
+  }
 }
